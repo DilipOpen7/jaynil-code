@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>OpenEyes Technologies</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link type="image/x-icon" rel="shortcut icon" href="https://theopeneyes.com/images/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="https://theopeneyes.com/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../static/css/flaticon.css" />
+	<link type="text/css" rel="stylesheet" href="https://theopeneyes.com/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../static/css/home.css" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<!-- Logo -->
+				<div class="col-md-3 col-sm-2 col-xs-3">
+					<div class="logo"> <a href="https://openeyessurvey.com/"><img
+								src="../static/assets/OET-survey.png" alt="OpenEyes Technologies"
+								title="OpenEyes Technologies" class="img-responsive" /></a> </div>
+				</div>
+				<!-- End Logo -->
+
+				<!-- Header Address -->
+				<div class="col-md-9 col-sm-10 col-xs-9">
+					<button class="hamburger" type="button"><span></span></button>
+					<div class="header_address">
+						<div class="address"><i class="flaticon-placeholder"></i><span><strong>1629 K St NW #300
+								</strong><br>Washington DC 20006</span></div>
+						<div class="address"><i class="flaticon-smartphone"></i><span><strong>Call Us Now</strong><br><a
+									href="tel:703.957.9525">703.957.9525</a></span></div>
+						<div class="address"><i class="flaticon-mail"></i><span><strong>Send Us Email</strong><br><a
+									href="mailto:info@theopeneyes.com">info@theopeneyes.com</a></span></div>
+					</div>
+				</div>
+				<!-- End Header Address -->
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</header>
+	<div class="clearfix"></div>
+	<div class="home_main_banner">
+		<div class="intro-text">A home of a Patent pending Mind Blowing & Innovative tool! <br />Coming in 3rd
+				quarter of 2020! <br />Stay tune!</div>
+	</div>
+	<div class="clearfix"></div>
+	<footer>
+		<div class="partnership_footer">
+			<div class="col-sm-12 col-md-2 col-md-offset-2">
+				<div class="title_sponser text-center">
+					<p><b>Certification</b></p>
+					<img class="img-responsive iso" alt="" src="https://theopeneyes.com/images/iso-2015.png">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<div class="title_sponser text-center">
+					<p><b>Partners</b></p>
+					<img class="img-responsive microsoft" alt="" src="https://theopeneyes.com/images/microsoft.png">
+					<img class="img-responsive aws" alt="" src="https://theopeneyes.com/images/aws-cer.png">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<div class="title_sponser text-center">
+					<p><b>Membership</b></p>
+					<a href="https://www.nvtc.org/membership/public.php" target="_blank"><img
+							class="img-responsive nvtc" alt="" src="https://theopeneyes.com/images/nvtc.png"></a>
+					<a href="https://dc.tie.org/" target="_blank"><img class="img-responsive tedc" alt=""
+							src="https://theopeneyes.com/images/tedc.png"></a>
+					<a href="https://www.testpublishers.org/" target="_blank"><img class="img-responsive tedc" alt=""
+							src="https://theopeneyes.com/images/atp.jpg"></a>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12 text-left">Copyrights &copy; 2020 OpenEyes Technologies Inc.</div>
+
+				<div class="col-md-6 col-sm-12 text-right">
+
+					<ul class="social_links">
+						<li><a href="/terms-of-use" class="policy_li">Terms of Use</a></li>
+						<li><a href="/privacy-policy" class="policy_li">Privacy Policy</a></li>
+						<li><a href="/cookie-policy" class="policy_li">Cookie Policy</a></li>
+						<li><a href="https://twitter.com/OpenEyesTech" target="_blank"><i
+									class="flaticon-twitter-logo-silhouette"></i></a></li>
+
+						<li><a href="https://www.linkedin.com/company/13243146/" target="_blank"><i
+									class="flaticon-linkedin"></i></a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+	<script src="https://theopeneyes.com/js/jquery-1.11.3.min.js"></script>
+	<script src="https://theopeneyes.com/js/bootstrap.min.js"></script>
+	<script>
+		// Back to Top 
+		const body = document.querySelector('body');
+		body.style.setProperty('--screen-height', $(window).height() + "px");
+		$(function () {
+			$(window).scroll(function () {
+				var scrolled = $(window).scrollTop();
+				if (scrolled > 200) { $('.go_top').fadeIn('slow'); }
+				if (scrolled < 200) { $('.go_top').fadeOut('slow'); }
+			});
+
+			$('.go_top').click(function () {
+				$("html, body").animate({ scrollTop: "0" }, 500);
+			});
+		});
+	// End Back to Top
+	</script>
+</body>
+</html>

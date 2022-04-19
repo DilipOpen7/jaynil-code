@@ -1,0 +1,223 @@
+### PLEASE READ THIS BEFORE YOU EDIT : ->
+### - These are the responses that Alexa gives to its users.
+### - For eg, consider this statement->  welcome: Hello there! I will take your survey. 
+###   Here 'welcome' is the KEY and content after the colon(:) is the VALUE.
+### - You are free to change the VALUE.
+### - Please DO NOT change the KEY. It will create a disaster. 
+### - Make sure to write complete sentences and have a full-stop/question-mark at the end of the response.
+
+
+######### Welcome ############
+# intro
+Main_Intro: Welcome to OpenEyes' Survey, the world's largest database of surveys by voice. Do you have a Survey ID?
+
+Main_Intro_RPC: Welcome to OpenEyes' Survey, the world's largest database of surveys by voice. Please tell me the survey ID.
+
+# Greet the user : account linking enabled
+prompt_user_id: Hello {}. Please tell me your 5 digit pin number.
+
+# Greet the user: account not linked
+Act_Not_Linked_Welcome: To begin, please go to the OpenEyes Survey Skill in your Alexa App and click on Link Account. After you are ready, call for me again. Bye.
+
+
+########### OPEN SURVEY ###############
+o_ask_survey_id_first: Alright, let's begin open surveys. To begin, I will need a survey ID. Please tell me the survey ID.
+o_ask_survey_id: Please tell me the survey ID
+
+o_invalid_survey_id_first_attempt: I am sorry! Survey ID {} is not valid. Please check your survey ID and try again. 
+o_invalid_survey_id_second_attempt: I cannot find a survey with Survey ID {}. Let's try one more time. Please tell me the Survey ID
+o_invalid_survey_id_third_attempt: Ahh! I have hard time finding the Survey. For security reasons, I have to exit. Please verify the Survey ID and call for me again. Have a nice one!
+
+prompt_o_survey_review: You have answered all the questions. If you want to review your responses, say Review, otherwise say Done to complete the survey.
+
+o_survey_complete: Congratulations and thank you! You have completed the survey. To continue answering more surveys, say survey ID. Otherwise, say Bye or Stop to close this survey..
+
+
+
+######### Authentication ########
+
+# When account linked
+user_ask_pin: I think I know who you are, but let me confirm my memory. Would you mind telling me your 4 digit pin?
+
+# Enables user to speak again pin if he wants
+user_pin2: Okay, please tell me your pin number.
+
+# User pin not found try 1
+#user_invalid_pin_first_attempt: I am sorry {}! I thought I knew who you are but I guess not. 
+user_invalid_pin_first_attempt: I am sorry {}! I thought I knew who you are but I guess not. Would you mind telling me your Pin again?
+
+
+# User pin not found try 2
+#user_invalid_pin_second_attempt: I am having difficulty recognizing you {}. Let's try one more time.
+user_invalid_pin_second_attempt: I am difficulty recognizing you {}. Let's try one more time. Please say your Pin again.
+
+
+# User pin not found try 3
+user_invalid_pin_third_attempt: Ah! I have hard time verifying you {}. For security reason, I have to exit. Please verify your pin and call for me again. Have a nice one!
+
+
+########## Home Page #########
+# Home page info
+dashboard_stats: You have {} New surveys and {} Incomplete surveys. To start a survey, please say, New survey or, Incomplete survey.
+
+# When user says anything other than Incomplete or Invited
+invalid_survey_type: I am not sure that I got that. Please say Incomplete survey or New survey.
+
+# Gives user all the available new survey
+new_survey: I have following new survey for you.
+
+# No new surveys
+no_new_survey: You do not have any new surveys. Say, Home to explore more surveys.
+
+#Gives user list of incomplete survey
+incomplete_survey: You have following incomplete survey.
+
+# No incomplete surveys
+no_incomplete_survey: "You do not have any incomplete surveys. Say, Home to explore more surveys."
+
+# Give instruction to check the alexa app for more surveys
+check_app_for_more_survey: You can check all available surveys in your Alexa app. To choose a survey, please tell me the survey option number. 
+
+
+#If user has already completed the survey
+already_completed: You have already completed this survey. Let's explore some more surveys.
+
+
+
+########### In Survey #############
+# Instruction for the survey
+instructions_for_new_survey: There will be {{ total_questions }} questions in the survey. Okay?
+
+#Instruction for incomplete survey
+instructions_for_incomplete_survey: Just as a reminder, please rate each question on a scale of 1 to 5. 1 being poor rating and 5 being an excellent rating. Okay?
+
+# Give rating instruction
+rating_instruction: Please rate on a scale of 1 to 5. 1 being a poor rating and 5 being an excellent rating. Okay?
+
+good_rating: Good. Ready for next question?
+
+bad_rating: I am sorry for your bad experience. Ready for next question?
+    
+
+# prompt user to review the survey
+prompt_survey_review: You have answered all the questions. If you want to review your responses, say Review, otherwise say done to complete the survey.
+
+# after survey completes
+prompt_complete_in_survey: Congratulations and thank you! You have completed the survey. Say, Go to Home, for new survey. Otherwise, say Bye or Stop to close this survey..
+
+# exit the survey
+prompt_exit_in_survey: I believe you want to exit from this survey, is that Correct?
+
+# sign out while giving the survey
+survey_sign_out: Your current survey has been saved. Let me sign you out. You have been successfully signed out. You know how to reach me if you miss me.
+
+# stop the current survey
+prompt_stop_survey: If you want to stop this survey, please say, stop survey.
+
+# if no survey is going on and user says to stop survey.
+prompt_stop_out_survey: Hmm, I see you have no survey currently in progress. Say, open help, for assistance.
+
+# user do not want to stop survey
+prompt_stop_by_mistake_in_survey: Oh! I misunderstood. Let's get back to where we were.
+
+######### OPT OUT/IN #########
+
+# OPT OUT of given category
+prompt_opt_out_category: You have been successfully opted out of {} surveys. Please say, Home to start a survey.
+
+# Do not opt out if user does not give confirmation
+prompt_opt_out_by_mistake: Okay, no changes have been made to your preference. Please say, Home to start a survey.
+
+# OPT IN of given category
+prompt_opt_in_category: You have been successfully opted in to {} surveys. Please say, Home to start a survey.
+
+# Do not opt out if user does not give confirmation
+prompt_opt_in_by_mistake: Okay, no changes made to your preference. Please say, Home to start a survey.
+
+
+############# Global responses #############
+# When users ask for help
+help_instructions: This is OpenEyes survey. Using this Alexa skill you can take surveys on demand. Say, Go to Home, to explore different surveys.
+
+# exit skill
+prompt_exit_skill: I think you want to sign out from your account, is that correct?
+
+# sign out whe not giving the survey
+prompt_sign_out: Let me sign you out. You have been successfully signed out. You know how to reach me if you miss me. Have a nice one!
+
+
+# When user wants to stop/cancel the skill and user is authenticated
+session_close_auth: Okay, I am logging you out from OpenEyes survey. All your surveys will be saved. Have a nice one!
+
+# When user wants to stop/cancel the skill and user is not authenticated
+session_close_no_auth: Thank you for using OpenEyes Survey. Please rate and write review about me on Amazon Skills Store. Have a nice one!
+
+# If user does not want to start the survey
+bye: I am not sure why you asked me to run then, but okay... bye.
+
+
+
+############ Review ###############
+
+no_ongoing_survey: You do not have any surveys in progress. Please say Open Surveys to start open surveys or Go to Home and start invited survey.
+
+
+
+
+
+########## Question instructions #########
+
+mcq_question: Please choose one option number. 
+
+desc_question: Please let me know your answer in form a short sentence.
+
+rating_question: Please rate on a scale of 1 to 5. 1 being poor rating and 5 being excellent rating. 
+
+######### Feedback with invalid input #######
+
+invalid_mcq_option: Invalid option number. Please provide a valid option number.
+
+invalid_desc_answer: Invalid answer. Please let me know your answer in form a short sentence.
+
+invalid_rating_scale: Invalid rating. Please rate on a scale of 1 to 5. 1 being poor rating and 5 being excellent rating.
+
+
+
+
+
+#############
+#### RECOMMENEDED NOT TO CHANGE THESE RESPONSES-> 
+
+# Ask to relink
+relink_account: I am really sorry. OpenEyes Survey needs your account to be linked. Go to your Alexa app and click on Link Account.
+
+# Ask for pin
+re_auth: I am sorry. Before we proceed, I need to authenticate you. What is your pin number?
+
+not_understand: I am not sure what you mean. 
+
+fallback1: I don't know how to respond to that. To start over, Say go to home.
+
+invalid_rating: Please rate on a scale of 1 to 5. 1 being poor rating and 5 being excellent rating.
+
+except: Something went wrong. Say Close, to close the skill. Error message is 
+
+i_said: I said, 
+
+
+test: <speak> Hey <break time="3s"/> jaynil </speak>
+
+
+
+########### DEPRECATED ############
+# Enables user to speak again user id if he wants
+user_id2: Okay, please tell me your user I D
+
+# User id not found try 1
+user_id_not_found1: I am sorry! I Can't recognize you. Would you mind saying your User I D again?
+
+# User id not found try 2
+user_id_not_found2: I am having difficulty recognizing you. Please say your User I D one more time.
+
+# User id not found try 3
+user_id_not_found3: For security purposes, I am closing myself. Please call for me again when you are ready. Goodbye!

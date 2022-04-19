@@ -1,0 +1,16 @@
+
+:root {
+    --screen-height:500px;
+ }
+.home_main_banner{
+    width: 100%;
+    display: table;
+    background-color: #08314b;
+    margin: 0px; text-align: center;
+}
+.intro-text{
+    color: #fff;
+    height:calc(var(--screen-height) - 292px); vertical-align: middle; display: table-cell;
+    text-align: center; padding: 0 30px;
+    font-size:32px; line-height: 45px; margin: 0 auto;
+}
